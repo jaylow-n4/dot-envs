@@ -13,27 +13,24 @@
         },
         "editor.tabSize": 2
     },
-    "[github-actions-workflow]": {
-        "editor.defaultFormatter": "redhat.vscode-yaml"
-    },
-    "[jsonc]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "[python]": {
-        "diffEditor.ignoreTrimWhitespace": false,
-        "editor.defaultFormatter": "ms-python.autopep8"
-    },
-    "[typescript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "[vue]": {
+    "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "autopep8.args": [
-        "--ignore=W191",
-        "--max-line-length=320"
-    ],
     "biome.suggestInstallingGlobally": false,
+    "chat.agent.maxRequests": 1000,
+    "chat.agent.thinking.collapsedTools": "all",
+    "chat.customAgentInSubagent.enabled": true,
+    "chat.editing.confirmEditRequestRemoval": false,
+    "chat.editing.confirmEditRequestRetry": false,
+    "chat.mcp.gallery.enabled": true,
+    "chat.tools.terminal.autoApprove": {
+        "/^mv /mnt/g/Documents/暇つぶし/mcp-server-test/resources/world-settings/characters/the-black-monopoly/mira-andren\\.md /mnt/g/Documents/暇つぶし/mcp-server-test/resources/world-settings/characters/witch-agency/primal-witch/$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    },
+    "chat.useNestedAgentsMdFiles": true,
+    "chat.viewSessions.orientation": "stacked",
     "clock.dateFormat": "yyyy/mm/dd HH:MM",
     "debug.terminal.clearBeforeReusing": true,
     "debug.toolBarLocation": "commandCenter",
@@ -53,6 +50,7 @@
     "editor.smoothScrolling": true,
     "editor.suggest.preview": true,
     "editor.tabCompletion": "on",
+    "editor.wrapOnEscapedLineFeeds": true,
     "explorer.compactFolders": false,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
@@ -61,9 +59,6 @@
     "explorer.sortOrderLexicographicOptions": "upper",
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
-    },
-    "files.associations": {
-        ".env": "ini"
     },
     "files.eol": "\n",
     "files.exclude": {
@@ -77,24 +72,35 @@
     },
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
-    "flake8.args": [
-        "--max-line-length=320",
-        "--ignore=W191,E302,E303,W292"
-    ],
     "git.autofetch": true,
     "git.enableSmartCommit": true,
+    "github.copilot.chat.codesearch.enabled": true,
+    "github.copilot.chat.githubMcpServer.enabled": true,
+    "github.copilot.chat.githubMcpServer.lockdown": true,
+    "github.copilot.chat.localeOverride": "ja",
     "github.copilot.enable": {
         "*": false,
         "markdown": false,
         "plaintext": false,
         "scminput": false,
+        "typescript": true,
         "typescriptreact": false
     },
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "github.copilot.selectedCompletionModel": "DeepSeek-R1-0528-Qwen3",
     "gitlens.ai.model": "vscode",
     "gitlens.ai.vscode.model": "copilot:gpt-4.1",
     "indentRainbow.indicatorStyle": "light",
     "javascript.format.semicolons": "insert",
     "javascript.updateImportsOnFileMove.enabled": "always",
+    "json.schemaDownload.trustedDomains": {
+        "https://biomejs.dev": true,
+        "https://json-schema.org/": true,
+        "https://json.schemastore.org/": true,
+        "https://raw.githubusercontent.com/": true,
+        "https://schemastore.azurewebsites.net/": true,
+        "https://www.schemastore.org/": true
+    },
     "markdown.experimental.updateLinksOnPaste": true,
     "markdown.preview.breaks": true,
     "markdown.preview.doubleClickToSwitchToEditor": false,
@@ -107,9 +113,6 @@
     "python.terminal.activateEnvironment": false,
     "python.terminal.launchArgs": [],
     "redhat.telemetry.enabled": true,
-    "remote.SSH.remotePlatform": {
-        "Nakagawa_MacBookPro": "macOS"
-    },
     "security.allowedUNCHosts": [
         "wsl.localhost"
     ],
@@ -136,12 +139,12 @@
         "docker-desktop"
     ],
     "terminal.integrated.automationProfile.windows": {},
-    "terminal.integrated.defaultProfile.linux": "fish",
-    "terminal.integrated.defaultProfile.osx": "fish",
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.defaultProfile.osx": "zsh",
     "terminal.integrated.defaultProfile.windows": "PowerShell",
     "terminal.integrated.detectLocale": "on",
     "terminal.integrated.enableImages": true,
-    "terminal.integrated.enableMultiLinePasteWarning": "always",
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
     "terminal.integrated.fontFamily": "Monaco,'FiraCode Nerd Font','Hiragino Sans', monospace",
     "terminal.integrated.fontLigatures.enabled": true,
     "terminal.integrated.gpuAcceleration": "on",
@@ -304,10 +307,14 @@
         "editorIndentGuide.background5": "#204080",
         "editorIndentGuide.background6": "#804080"
     },
-    "workbench.colorTheme": "Ayu Dark Bordered",
+    "workbench.colorTheme": "Ayu Mirage Bordered",
     "workbench.editor.openPositioning": "last",
     "workbench.editor.pinnedTabsOnSeparateRow": true,
     "workbench.editor.tabSizing": "shrink",
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.log": "default"
+    },
     "workbench.enableExperiments": false,
     "workbench.experimental.share.enabled": true,
     "workbench.iconTheme": "material-icon-theme",
@@ -316,5 +323,7 @@
     "workbench.settings.applyToAllProfiles": [
         "editor.fontFamily"
     ],
-    "workbench.tree.renderIndentGuides": "always"
+    "workbench.tree.renderIndentGuides": "always",
+    "git.autoStash": true,
+    "chat.tips.enabled": false
 }
