@@ -1,0 +1,6 @@
+alias ls='ls --color=auto'
+alias ll='ls -alF'
+alias g='git'
+alias ga='git add'
+alias gc='git commit'
+alias gp='git push'

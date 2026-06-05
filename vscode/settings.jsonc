@@ -1,329 +1,282 @@
 {
-    "[css]": {
-        "editor.defaultFormatter": "vscode.css-language-features"
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features",
+  },
+  "[dockercompose]": {
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.insertSpaces": true,
+    "editor.quickSuggestions": {
+      "comments": false,
+      "other": true,
+      "strings": true,
     },
-    "[dockercompose]": {
-        "editor.autoIndent": "advanced",
-        "editor.defaultFormatter": "redhat.vscode-yaml",
-        "editor.insertSpaces": true,
-        "editor.quickSuggestions": {
-            "comments": false,
-            "other": true,
-            "strings": true
-        },
-        "editor.tabSize": 2
+    "editor.tabSize": 2,
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "biome.suggestInstallingGlobally": false,
+  "chat.agent.maxRequests": 1000,
+  "chat.agent.thinking.collapsedTools": "all",
+  "chat.customAgentInSubagent.enabled": true,
+  "chat.editing.confirmEditRequestRemoval": false,
+  "chat.editing.confirmEditRequestRetry": false,
+  "chat.mcp.gallery.enabled": true,
+  "chat.tools.terminal.autoApprove": {
+    "/^mv /mnt/g/Documents/暇つぶし/mcp-server-test/resources/world-settings/characters/the-black-monopoly/mira-andren\\.md /mnt/g/Documents/暇つぶし/mcp-server-test/resources/world-settings/characters/witch-agency/primal-witch/$/": {
+      "approve": true,
+      "matchCommandLine": true,
     },
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "chat.useNestedAgentsMdFiles": true,
+  "chat.viewSessions.orientation": "stacked",
+  "clock.dateFormat": "yyyy/mm/dd HH:MM",
+  "debug.terminal.clearBeforeReusing": true,
+  "debug.toolBarLocation": "commandCenter",
+  "diffEditor.experimental.showMoves": true,
+  "docker.extension.enableComposeLanguageServer": false,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.accessibilitySupport": "off",
+  "editor.allowVariableFonts": false,
+  "editor.allowVariableFontsInAccessibilityMode": true,
+  "editor.fontFamily": "Monaco,'FiraCode Nerd Font','Hiragino Sans', monospace",
+  "editor.fontLigatures": false,
+  "editor.guides.bracketPairs": "active",
+  "editor.largeFileOptimizations": false,
+  "editor.minimap.showSlider": "always",
+  "editor.mouseWheelZoom": true,
+  "editor.renderWhitespace": "boundary",
+  "editor.smoothScrolling": true,
+  "editor.suggest.preview": true,
+  "editor.tabCompletion": "on",
+  "editor.wrapOnEscapedLineFeeds": true,
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmPasteNative": false,
+  "explorer.sortOrder": "type",
+  "explorer.sortOrderLexicographicOptions": "upper",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1,
+  },
+  "files.eol": "\n",
+  "files.exclude": {
+    "**/.hg": false,
+    "**/.svn": false,
+    "**/CVS": false,
+    "**/Thumbs.db": false,
+    "**/__pycache__": true,
+    "**/node_modules": true,
+    "**/venv": true,
+  },
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "github.copilot.chat.codesearch.enabled": true,
+  "github.copilot.chat.githubMcpServer.enabled": true,
+  "github.copilot.chat.githubMcpServer.lockdown": true,
+  "github.copilot.chat.localeOverride": "ja",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false,
+    "typescript": true,
+    "typescriptreact": false,
+    "python": true
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "github.copilot.selectedCompletionModel": "DeepSeek-R1-0528-Qwen3",
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "indentRainbow.indicatorStyle": "light",
+  "javascript.format.semicolons": "insert",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "json.schemaDownload.trustedDomains": {
+    "https://biomejs.dev": true,
+    "https://json-schema.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://raw.githubusercontent.com/": true,
+    "https://schemastore.azurewebsites.net/": true,
+    "https://www.schemastore.org/": true,
+  },
+  "markdown.experimental.updateLinksOnPaste": true,
+  "markdown.preview.breaks": true,
+  "markdown.preview.doubleClickToSwitchToEditor": false,
+  "markdown.preview.scrollEditorWithPreview": false,
+  "material-icon-theme.hidesExplorerArrows": true,
+  "prettier.printWidth": 160,
+  "python.REPL.enableREPLSmartSend": false,
+  "python.analysis.autoImportCompletions": true,
+  "python.defaultInterpreterPath": "python3",
+  "python.terminal.activateEnvironment": false,
+  "python.terminal.launchArgs": [],
+  "redhat.telemetry.enabled": true,
+  "security.allowedUNCHosts": ["wsl.localhost"],
+  "security.workspace.trust.untrustedFiles": "open",
+  "settingsSync.ignoredExtensions": [
+    "illixion.vscode-vibrancy-continued",
+    "github.github-vscode-theme",
+    "ms-toolsai.jupyter",
+    "ms-toolsai.vscode-jupyter-cell-tags",
+  ],
+  "settingsSync.ignoredSettings": ["workbench.colorTheme", "editor.fontSize", "editor.fontFamily", "terminal.integrated.fontFamily"],
+  "terminal.integrated.allowedLinkSchemes": ["file", "http", "https", "mailto", "vscode", "vscode-insiders", "docker-desktop"],
+  "terminal.integrated.automationProfile.windows": {},
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.detectLocale": "on",
+  "terminal.integrated.enableImages": true,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.fontFamily": "Monaco,'FiraCode Nerd Font','Hiragino Sans', monospace",
+  "terminal.integrated.fontLigatures.enabled": true,
+  "terminal.integrated.gpuAcceleration": "on",
+  "terminal.integrated.localEchoLatencyThreshold": -1,
+  "terminal.integrated.macOptionClickForcesSelection": true,
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "icon": "terminal-bash",
+      "path": "bash",
     },
-    "biome.suggestInstallingGlobally": false,
-    "chat.agent.maxRequests": 1000,
-    "chat.agent.thinking.collapsedTools": "all",
-    "chat.customAgentInSubagent.enabled": true,
-    "chat.editing.confirmEditRequestRemoval": false,
-    "chat.editing.confirmEditRequestRetry": false,
-    "chat.mcp.gallery.enabled": true,
-    "chat.tools.terminal.autoApprove": {
-        "/^mv /mnt/g/Documents/暇つぶし/mcp-server-test/resources/world-settings/characters/the-black-monopoly/mira-andren\\.md /mnt/g/Documents/暇つぶし/mcp-server-test/resources/world-settings/characters/witch-agency/primal-witch/$/": {
-            "approve": true,
-            "matchCommandLine": true
-        }
+    "fish": {
+      "icon": "terminal",
+      "overrideName": true,
+      "path": "fish",
     },
-    "chat.useNestedAgentsMdFiles": true,
-    "chat.viewSessions.orientation": "stacked",
-    "clock.dateFormat": "yyyy/mm/dd HH:MM",
-    "debug.terminal.clearBeforeReusing": true,
-    "debug.toolBarLocation": "commandCenter",
-    "diffEditor.experimental.showMoves": true,
-    "docker.extension.enableComposeLanguageServer": false,
-    "editor.acceptSuggestionOnEnter": "off",
-    "editor.accessibilitySupport": "off",
-    "editor.allowVariableFonts": false,
-    "editor.allowVariableFontsInAccessibilityMode": true,
-    "editor.fontFamily": "Monaco,'FiraCode Nerd Font','Hiragino Sans', monospace",
-    "editor.fontLigatures": false,
-    "editor.guides.bracketPairs": "active",
-    "editor.largeFileOptimizations": false,
-    "editor.minimap.showSlider": "always",
-    "editor.mouseWheelZoom": true,
-    "editor.renderWhitespace": "boundary",
-    "editor.smoothScrolling": true,
-    "editor.suggest.preview": true,
-    "editor.tabCompletion": "on",
-    "editor.wrapOnEscapedLineFeeds": true,
-    "explorer.compactFolders": false,
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "explorer.confirmPasteNative": false,
-    "explorer.sortOrder": "type",
-    "explorer.sortOrderLexicographicOptions": "upper",
-    "extensions.experimental.affinity": {
-        "asvetliakov.vscode-neovim": 1
+    "pwsh": {
+      "icon": "terminal-powershell",
+      "path": "pwsh",
     },
-    "files.eol": "\n",
-    "files.exclude": {
-        "**/.hg": false,
-        "**/.svn": false,
-        "**/CVS": false,
-        "**/Thumbs.db": false,
-        "**/__pycache__": true,
-        "**/node_modules": true,
-        "**/venv": true
+    "tmux": {
+      "icon": "terminal-tmux",
+      "path": "tmux",
     },
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
-    "git.autofetch": true,
-    "git.enableSmartCommit": true,
-    "github.copilot.chat.codesearch.enabled": true,
-    "github.copilot.chat.githubMcpServer.enabled": true,
-    "github.copilot.chat.githubMcpServer.lockdown": true,
-    "github.copilot.chat.localeOverride": "ja",
-    "github.copilot.enable": {
-        "*": false,
-        "markdown": false,
-        "plaintext": false,
-        "scminput": false,
-        "typescript": true,
-        "typescriptreact": false
+    "zsh": {
+      "icon": "terminal",
+      "path": "zsh",
     },
-    "github.copilot.nextEditSuggestions.enabled": true,
-    "github.copilot.selectedCompletionModel": "DeepSeek-R1-0528-Qwen3",
-    "gitlens.ai.model": "vscode",
-    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
-    "indentRainbow.indicatorStyle": "light",
-    "javascript.format.semicolons": "insert",
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "json.schemaDownload.trustedDomains": {
-        "https://biomejs.dev": true,
-        "https://json-schema.org/": true,
-        "https://json.schemastore.org/": true,
-        "https://raw.githubusercontent.com/": true,
-        "https://schemastore.azurewebsites.net/": true,
-        "https://www.schemastore.org/": true
+  },
+  "terminal.integrated.profiles.osx": {
+    "bash": {
+      "icon": "terminal-bash",
+      "path": "/opt/homebrew/bin/bash",
     },
-    "markdown.experimental.updateLinksOnPaste": true,
-    "markdown.preview.breaks": true,
-    "markdown.preview.doubleClickToSwitchToEditor": false,
-    "markdown.preview.scrollEditorWithPreview": false,
-    "material-icon-theme.hidesExplorerArrows": true,
-    "prettier.printWidth": 160,
-    "python.REPL.enableREPLSmartSend": false,
-    "python.analysis.autoImportCompletions": true,
-    "python.defaultInterpreterPath": "python3",
-    "python.terminal.activateEnvironment": false,
-    "python.terminal.launchArgs": [],
-    "redhat.telemetry.enabled": true,
-    "security.allowedUNCHosts": [
-        "wsl.localhost"
-    ],
-    "security.workspace.trust.untrustedFiles": "open",
-    "settingsSync.ignoredExtensions": [
-        "illixion.vscode-vibrancy-continued",
-        "github.github-vscode-theme",
-        "ms-toolsai.jupyter",
-        "ms-toolsai.vscode-jupyter-cell-tags"
-    ],
-    "settingsSync.ignoredSettings": [
-        "workbench.colorTheme",
-        "editor.fontSize",
-        "editor.fontFamily",
-        "terminal.integrated.fontFamily"
-    ],
-    "terminal.integrated.allowedLinkSchemes": [
-        "file",
-        "http",
-        "https",
-        "mailto",
-        "vscode",
-        "vscode-insiders",
-        "docker-desktop"
-    ],
-    "terminal.integrated.automationProfile.windows": {},
-    "terminal.integrated.defaultProfile.linux": "zsh",
-    "terminal.integrated.defaultProfile.osx": "zsh",
-    "terminal.integrated.defaultProfile.windows": "PowerShell",
-    "terminal.integrated.detectLocale": "on",
-    "terminal.integrated.enableImages": true,
-    "terminal.integrated.enableMultiLinePasteWarning": "never",
-    "terminal.integrated.fontFamily": "Monaco,'FiraCode Nerd Font','Hiragino Sans', monospace",
-    "terminal.integrated.fontLigatures.enabled": true,
-    "terminal.integrated.gpuAcceleration": "on",
-    "terminal.integrated.localEchoLatencyThreshold": -1,
-    "terminal.integrated.macOptionClickForcesSelection": true,
-    "terminal.integrated.profiles.linux": {
-        "bash": {
-            "icon": "terminal-bash",
-            "path": "bash"
-        },
-        "fish": {
-            "icon": "terminal",
-            "overrideName": true,
-            "path": "fish"
-        },
-        "pwsh": {
-            "icon": "terminal-powershell",
-            "path": "pwsh"
-        },
-        "tmux": {
-            "icon": "terminal-tmux",
-            "path": "tmux"
-        },
-        "zsh": {
-            "icon": "terminal",
-            "path": "zsh"
-        }
+    "fish": {
+      "icon": "terminal",
+      "path": "fish",
     },
-    "terminal.integrated.profiles.osx": {
-        "bash": {
-            "icon": "terminal-bash",
-            "path": "/opt/homebrew/bin/bash"
-        },
-        "fish": {
-            "icon": "terminal",
-            "path": "fish"
-        },
-        "pwsh": {
-            "icon": "terminal-powershell",
-            "path": "pwsh"
-        },
-        "tmux": {
-            "icon": "terminal",
-            "path": "tmux"
-        },
-        "zsh": {
-            "icon": "terminal",
-            "path": "zsh"
-        }
+    "pwsh": {
+      "icon": "terminal-powershell",
+      "path": "pwsh",
     },
-    "terminal.integrated.profiles.windows": {
-        "PowerShell": {
-            "icon": "terminal-powershell",
-            "source": "PowerShell"
-        }
+    "tmux": {
+      "icon": "terminal",
+      "path": "tmux",
     },
-    "terminal.integrated.rightClickBehavior": "default",
-    "terminal.integrated.stickyScroll.enabled": true,
-    "terminal.integrated.suggest.enabled": true,
-    "terminal.integrated.tabs.showActions": "always",
-    "terminal.integrated.tabs.showActiveTerminal": "always",
-    "typescript.format.semicolons": "insert",
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "vim.camelCaseMotion.enable": true,
-    "vim.handleKeys": {
-        "<C-a>": false, //全選択
-        //以下はVimではなく、Windows側のショートカット
-        "<C-c>": false, //コピー
-        //以下はVimのショートカットを利用
-        "<C-d>": true, //下方向へのカーソル移動 ※上方向へのカーソル移動(Ctrl+u)はデフォルト設定でも動作
-        "<C-f>": false, //検索
-        "<C-g>": false, //行数を表示する
-        "<C-h>": false, //タブ移動
-        "<C-k>": false, //他のコマンドに派生する
-        "<C-n>": false, //次の候補を選択する
-        "<C-p>": false, //ファイル検索
-        "<C-v>": false, //貼り付け ※VisualBlockモードはCtrl＋Qで行う
-        "<C-w>": false, //タブを閉じる
-        "<C-x>": false //切り取り
+    "zsh": {
+      "icon": "terminal",
+      "path": "zsh",
     },
-    // 検索にマッチした箇所をハイライト
-    "vim.hlsearch": true,
-    "vim.insertModeKeyBindings": [
-        {
-            "after": [
-                "<Esc>"
-            ],
-            "before": [
-                "j",
-                "j"
-            ]
-        }
-    ],
-    "vim.smartRelativeLine": true,
-    // モードごとにステータスバーの色
-    "vim.statusBarColorControl": false,
-    "vim.statusBarColors.commandlineinprogress": [
-        "#86592d",
-        "#fff"
-    ],
-    "vim.statusBarColors.easymotioninputmode": [
-        "#86592d",
-        "#fff"
-    ],
-    "vim.statusBarColors.easymotionmode": [
-        "#86592d",
-        "#fff"
-    ],
-    "vim.statusBarColors.insert": [
-        "#5f0000",
-        "#fff"
-    ],
-    "vim.statusBarColors.normal": [
-        "#005f5f",
-        "#fff"
-    ],
-    "vim.statusBarColors.replace": [
-        "#000000",
-        "#fff"
-    ],
-    "vim.statusBarColors.searchinprogressmode": [
-        "#86592d",
-        "#fff"
-    ],
-    "vim.statusBarColors.surroundinputmode": [
-        "#86592d",
-        "#fff"
-    ],
-    "vim.statusBarColors.visual": [
-        "#5f00af",
-        "#fff"
-    ],
-    "vim.statusBarColors.visualblock": [
-        "#86592d",
-        "#fff"
-    ],
-    "vim.statusBarColors.visualline": [
-        "#005f87",
-        "#fff"
-    ],
-    // OS のクリップボードと同期
-    "vim.useSystemClipboard": true,
-    "window.customMenuBarAltFocus": false,
-    "window.customTitleBarVisibility": "auto",
-    "window.enableMenuBarMnemonics": false,
-    "window.menuBarVisibility": "visible",
-    "window.systemColorTheme": "dark",
-    "window.titleBarStyle": "custom",
-    "workbench.colorCustomizations": {
-        "editorIndentGuide.activeBackground1": "#fff",
-        "editorIndentGuide.activeBackground2": "#fff",
-        "editorIndentGuide.activeBackground3": "#fff",
-        "editorIndentGuide.activeBackground4": "#fff",
-        "editorIndentGuide.activeBackground5": "#fff",
-        "editorIndentGuide.activeBackground6": "#fff",
-        "editorIndentGuide.background1": "#804040",
-        "editorIndentGuide.background2": "#806020",
-        "editorIndentGuide.background3": "#808020",
-        "editorIndentGuide.background4": "#208020",
-        "editorIndentGuide.background5": "#204080",
-        "editorIndentGuide.background6": "#804080"
+  },
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "icon": "terminal-powershell",
+      "source": "PowerShell",
     },
-    "workbench.colorTheme": "Ayu Mirage Bordered",
-    "workbench.editor.openPositioning": "last",
-    "workbench.editor.pinnedTabsOnSeparateRow": true,
-    "workbench.editor.tabSizing": "shrink",
-    "workbench.editorAssociations": {
-        "*.copilotmd": "vscode.markdown.preview.editor",
-        "*.log": "default"
+  },
+  "terminal.integrated.rightClickBehavior": "default",
+  "terminal.integrated.stickyScroll.enabled": true,
+  "terminal.integrated.suggest.enabled": true,
+  "terminal.integrated.tabs.showActions": "always",
+  "terminal.integrated.tabs.showActiveTerminal": "always",
+  "typescript.format.semicolons": "insert",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "vim.camelCaseMotion.enable": true,
+  "vim.handleKeys": {
+    "<C-a>": false, //全選択
+    //以下はVimではなく、Windows側のショートカット
+    "<C-c>": false, //コピー
+    //以下はVimのショートカットを利用
+    "<C-d>": true, //下方向へのカーソル移動 ※上方向へのカーソル移動(Ctrl+u)はデフォルト設定でも動作
+    "<C-f>": false, //検索
+    "<C-g>": false, //行数を表示する
+    "<C-h>": false, //タブ移動
+    "<C-k>": false, //他のコマンドに派生する
+    "<C-n>": false, //次の候補を選択する
+    "<C-p>": false, //ファイル検索
+    "<C-v>": false, //貼り付け ※VisualBlockモードはCtrl＋Qで行う
+    "<C-w>": false, //タブを閉じる
+    "<C-x>": false, //切り取り
+  },
+  // 検索にマッチした箇所をハイライト
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "after": ["<Esc>"],
+      "before": ["j", "j"],
     },
-    "workbench.enableExperiments": false,
-    "workbench.experimental.share.enabled": true,
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.panel.showLabels": false,
-    "workbench.secondarySideBar.showLabels": false,
-    "workbench.settings.applyToAllProfiles": [
-        "editor.fontFamily"
-    ],
-    "workbench.tree.renderIndentGuides": "always",
-    "git.autoStash": true,
-    "chat.tips.enabled": false
+  ],
+  "vim.smartRelativeLine": true,
+  // モードごとにステータスバーの色
+  "vim.statusBarColorControl": false,
+  "vim.statusBarColors.commandlineinprogress": ["#86592d", "#fff"],
+  "vim.statusBarColors.easymotioninputmode": ["#86592d", "#fff"],
+  "vim.statusBarColors.easymotionmode": ["#86592d", "#fff"],
+  "vim.statusBarColors.insert": ["#5f0000", "#fff"],
+  "vim.statusBarColors.normal": ["#005f5f", "#fff"],
+  "vim.statusBarColors.replace": ["#000000", "#fff"],
+  "vim.statusBarColors.searchinprogressmode": ["#86592d", "#fff"],
+  "vim.statusBarColors.surroundinputmode": ["#86592d", "#fff"],
+  "vim.statusBarColors.visual": ["#5f00af", "#fff"],
+  "vim.statusBarColors.visualblock": ["#86592d", "#fff"],
+  "vim.statusBarColors.visualline": ["#005f87", "#fff"],
+  // OS のクリップボードと同期
+  "vim.useSystemClipboard": true,
+  "window.customMenuBarAltFocus": false,
+  "window.customTitleBarVisibility": "auto",
+  "window.enableMenuBarMnemonics": false,
+  "window.menuBarVisibility": "visible",
+  "window.systemColorTheme": "dark",
+  "window.titleBarStyle": "custom",
+  "workbench.colorCustomizations": {
+    "editorIndentGuide.activeBackground1": "#fff",
+    "editorIndentGuide.activeBackground2": "#fff",
+    "editorIndentGuide.activeBackground3": "#fff",
+    "editorIndentGuide.activeBackground4": "#fff",
+    "editorIndentGuide.activeBackground5": "#fff",
+    "editorIndentGuide.activeBackground6": "#fff",
+    "editorIndentGuide.background1": "#804040",
+    "editorIndentGuide.background2": "#806020",
+    "editorIndentGuide.background3": "#808020",
+    "editorIndentGuide.background4": "#208020",
+    "editorIndentGuide.background5": "#204080",
+    "editorIndentGuide.background6": "#804080",
+  },
+  "workbench.colorTheme": "Ayu Mirage Bordered",
+  "workbench.editor.openPositioning": "last",
+  "workbench.editor.pinnedTabsOnSeparateRow": true,
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.log": "default",
+  },
+  "workbench.enableExperiments": false,
+  "workbench.experimental.share.enabled": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.panel.showLabels": false,
+  "workbench.secondarySideBar.showLabels": false,
+  "workbench.settings.applyToAllProfiles": ["editor.fontFamily"],
+  "workbench.tree.renderIndentGuides": "always",
+  "git.autoStash": true,
+  "chat.tips.enabled": false,
+  "terminal.external.osxExec": "iTerm.app",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+},
+"workbench.editor.useModal": "some",
+"github.copilot.nextEditSuggestions.eagerness": "high",
+"git.confirmSync": false,
 }
