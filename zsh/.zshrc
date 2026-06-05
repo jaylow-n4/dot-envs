@@ -23,7 +23,7 @@ export PATH="/opt/homebrew/bin/:$PATH"
 if [ -f ~/.zplug/init.zsh ]; then
   source ~/.zplug/init.zsh
 else
-  echo "zplug is not installed. Please install zplug first."
+  echo "zplug is not installed. Install zplug first."
   curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
   source ~/.zplug/init.zsh
 fi
