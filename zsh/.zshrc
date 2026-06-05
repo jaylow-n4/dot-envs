@@ -19,6 +19,9 @@ export NVM_DIR="$HOME/.nvm"
 # Homebrew
 export PATH="/opt/homebrew/bin/:$PATH"
 
+# Local bin
+export PATH="$HOME/.local/bin:$PATH"
+
 # zplug
 if [ -f ~/.zplug/init.zsh ]; then
   source ~/.zplug/init.zsh
