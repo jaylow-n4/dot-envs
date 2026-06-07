@@ -102,4 +102,9 @@
       "ctrl-g": "vim::ShowLocation",
     },
   },
+  {
+    "unbind": {
+      "cmd-shift-w": "workspace::CloseWindow",
+    },
+  },
 ]
