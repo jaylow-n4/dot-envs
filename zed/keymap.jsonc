@@ -78,4 +78,28 @@
       "cmd-?": "agent::ToggleFocus",
     },
   },
+  {
+    "context": "vim_operator == c",
+    "bindings": {
+      "shift-r": "editor::Rename",
+    },
+  },
+  {
+    "context": "vim_operator == c",
+    "unbind": {
+      "d": "editor::Rename",
+    },
+  },
+  {
+    "context": "vim_mode == literal",
+    "unbind": {
+      "ctrl-g": ["vim::Literal", ["ctrl-g", "\u0007"]],
+    },
+  },
+  {
+    "context": "VimControl && !menu",
+    "unbind": {
+      "ctrl-g": "vim::ShowLocation",
+    },
+  },
 ]
