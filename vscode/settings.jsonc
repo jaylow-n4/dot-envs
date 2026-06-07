@@ -23,12 +23,6 @@
   "chat.editing.confirmEditRequestRemoval": false,
   "chat.editing.confirmEditRequestRetry": false,
   "chat.mcp.gallery.enabled": true,
-  "chat.tools.terminal.autoApprove": {
-    "/^mv /mnt/g/Documents/暇つぶし/mcp-server-test/resources/world-settings/characters/the-black-monopoly/mira-andren\\.md /mnt/g/Documents/暇つぶし/mcp-server-test/resources/world-settings/characters/witch-agency/primal-witch/$/": {
-      "approve": true,
-      "matchCommandLine": true,
-    },
-  },
   "chat.useNestedAgentsMdFiles": true,
   "chat.viewSessions.orientation": "stacked",
   "clock.dateFormat": "yyyy/mm/dd HH:MM",
@@ -85,7 +79,7 @@
     "scminput": false,
     "typescript": true,
     "typescriptreact": false,
-    "python": true
+    "python": true,
   },
   "github.copilot.nextEditSuggestions.enabled": true,
   "github.copilot.selectedCompletionModel": "DeepSeek-R1-0528-Qwen3",
@@ -122,8 +116,21 @@
     "ms-toolsai.jupyter",
     "ms-toolsai.vscode-jupyter-cell-tags",
   ],
-  "settingsSync.ignoredSettings": ["workbench.colorTheme", "editor.fontSize", "editor.fontFamily", "terminal.integrated.fontFamily"],
-  "terminal.integrated.allowedLinkSchemes": ["file", "http", "https", "mailto", "vscode", "vscode-insiders", "docker-desktop"],
+  "settingsSync.ignoredSettings": [
+    "workbench.colorTheme",
+    "editor.fontSize",
+    "editor.fontFamily",
+    "terminal.integrated.fontFamily",
+  ],
+  "terminal.integrated.allowedLinkSchemes": [
+    "file",
+    "http",
+    "https",
+    "mailto",
+    "vscode",
+    "vscode-insiders",
+    "docker-desktop",
+  ],
   "terminal.integrated.automationProfile.windows": {},
   "terminal.integrated.defaultProfile.linux": "zsh",
   "terminal.integrated.defaultProfile.osx": "zsh",
@@ -275,8 +282,8 @@
   "terminal.external.osxExec": "iTerm.app",
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-},
-"workbench.editor.useModal": "some",
-"github.copilot.nextEditSuggestions.eagerness": "high",
-"git.confirmSync": false,
+  },
+  "workbench.editor.useModal": "some",
+  "github.copilot.nextEditSuggestions.eagerness": "high",
+  "git.confirmSync": false,
 }
