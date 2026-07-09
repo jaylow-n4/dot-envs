@@ -21,90 +21,96 @@
   {
     "context": "Editor",
     "bindings": {
-      "alt-shift-f": "editor::Format",
-    },
+      "alt-shift-f": "editor::Format"
+    }
   },
   {
     "context": "Editor",
     "unbind": {
-      "cmd-shift-i": "editor::Format",
-    },
+      "cmd-shift-i": "editor::Format"
+    }
   },
   {
     "context": "Pane",
     "bindings": {
-      "ctrl-g": "search::SelectNextMatch",
-    },
+      "ctrl-g": "search::SelectNextMatch"
+    }
   },
   {
     "context": "Pane",
     "unbind": {
-      "cmd-g": "search::SelectNextMatch",
-    },
+      "cmd-g": "search::SelectNextMatch"
+    }
   },
   {
     "context": "Pane",
     "bindings": {
-      "ctrl-shift-g": "search::SelectPreviousMatch",
-    },
+      "ctrl-shift-g": "search::SelectPreviousMatch"
+    }
   },
   {
     "context": "Pane",
     "unbind": {
-      "cmd-shift-g": "search::SelectPreviousMatch",
-    },
+      "cmd-shift-g": "search::SelectPreviousMatch"
+    }
   },
   {
     "context": "Workspace",
     "bindings": {
-      "cmd-shift-g": "git_panel::ToggleFocus",
-    },
+      "cmd-shift-g": "git_panel::ToggleFocus"
+    }
   },
   {
     "context": "Workspace",
     "unbind": {
-      "ctrl-shift-g": "git_panel::ToggleFocus",
-    },
+      "ctrl-shift-g": "git_panel::ToggleFocus"
+    }
   },
   {
     "context": "Workspace",
     "bindings": {
-      "cmd-shift-i": "agent::ToggleFocus",
-    },
+      "cmd-shift-i": "agent::ToggleFocus"
+    }
   },
   {
     "context": "Workspace",
     "unbind": {
-      "cmd-?": "agent::ToggleFocus",
-    },
+      "cmd-?": "agent::ToggleFocus"
+    }
   },
   {
     "context": "vim_operator == c",
     "bindings": {
-      "shift-r": "editor::Rename",
-    },
+      "shift-r": "editor::Rename"
+    }
   },
   {
     "context": "vim_operator == c",
     "unbind": {
-      "d": "editor::Rename",
-    },
+      "d": "editor::Rename"
+    }
   },
   {
     "context": "vim_mode == literal",
     "unbind": {
-      "ctrl-g": ["vim::Literal", ["ctrl-g", "\u0007"]],
-    },
+      "ctrl-g": [
+        "vim::Literal",
+        [
+          "ctrl-g",
+          "\u0007"
+        ]
+      ]
+    }
   },
   {
     "context": "VimControl && !menu",
     "unbind": {
-      "ctrl-g": "vim::ShowLocation",
-    },
+      "ctrl-g": "vim::ShowLocation"
+    }
   },
   {
     "unbind": {
-      "cmd-shift-w": "workspace::CloseWindow",
-    },
-  },
+      "cmd-shift-w": "workspace::CloseWindow"
+    }
+  }
 ]

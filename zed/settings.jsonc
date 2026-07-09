@@ -7,6 +7,15 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "indent_guides": {
+    "coloring": "indent_aware",
+    "background_coloring": "disabled",
+  },
+  "mouse_wheel_zoom": false,
+  "sticky_scroll": {
+    "enabled": true,
+  },
+  "server_url": "https://zed.dev",
   "gutter": {
     "min_line_number_digits": 4,
   },
@@ -19,7 +28,6 @@
   "session": {
     "trust_all_worktrees": true,
   },
-  "server_url": "https://zed.dev",
   "proxy": "",
   "git": {
     "path_style": "file_path_first",
@@ -73,14 +81,26 @@
     "file_icons": true,
     "git_status": true,
   },
+  "whitespace_map": {
+    "space": "•",
+    "tab": "•",
+  },
   "vim": {
+    "use_regex_search": false,
     "use_system_clipboard": "on_yank",
     "toggle_relative_line_numbers": true,
   },
   "icon_theme": "Material Icon Theme",
   "languages": {
     "Markdown": {
-      "tab_size": 2,
+      "remove_trailing_whitespace_on_save": true,
+      "indent_guides": {
+        "coloring": "indent_aware",
+        "active_line_width": 1,
+        "line_width": 1,
+        "enabled": true,
+      },
+      "tab_size": 4,
       "show_edit_predictions": false,
     },
   },
@@ -100,12 +120,12 @@
       "default_config_options": {
         "allow_all": "on",
         "agent": "writer",
-        "reasoning_effort": "high",
-        "model": "claude-sonnet-4.6",
+        "reasoning_effort": "max",
+        "model": "claude-sonnet-5",
       },
       "favorite_config_option_values": {
         "reasoning_effort": ["high"],
-        "model": ["claude-sonnet-4.6"],
+        "model": ["claude-sonnet-5"],
       },
       "type": "registry",
     },
@@ -127,10 +147,9 @@
     "default_width": 320.0,
     "flexible": true,
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "claude-sonnet-4.6",
+      "provider": "ollama",
+      "model": "gemma4:latest",
       "enable_thinking": true,
-      "effort": "high",
     },
     "sidebar_side": "right",
     "dock": "right",
@@ -143,7 +162,6 @@
     "show_count_badge": true,
     "tree_view": true,
     "file_icons": true,
-    "sort_by_path": true,
     "dock": "left",
   },
   "prettier": {
@@ -201,5 +219,5 @@
   "show_whitespaces": "boundary",
   "ui_font_size": 14.0,
   "buffer_font_size": 12.0,
-  "theme": "Ayu Mirage",
+  "theme": "One Dark",
 }
