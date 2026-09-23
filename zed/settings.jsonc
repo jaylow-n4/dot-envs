@@ -54,6 +54,7 @@
   "zoomed_padding": true,
   "bottom_dock_layout": "contained",
   "title_bar": {
+    "show_sign_in": false,
     "show_menus": true,
     "show_branch_status_icon": true,
   },
@@ -135,7 +136,6 @@
       "show": "never",
     },
     "indent_size": 14.0,
-    "folder_icons": true,
     "file_icons": true,
     "dock": "right",
   },
