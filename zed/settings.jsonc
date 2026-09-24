@@ -106,14 +106,14 @@
     },
   },
   "edit_predictions": {
-    "provider": "copilot",
+    "provider": "none",
   },
   "buffer_font_weight": 400.0,
   "agent_servers": {
     "claude-acp": {
       "default_config_options": {
         "effort": "high",
-        "model": "sonnet[1m]",
+        "model": "opus",
       },
       "type": "registry",
     },
@@ -144,6 +144,10 @@
     "dock": "left",
   },
   "agent": {
+    "show_turn_stats": true,
+    "expand_terminal_card": false,
+    "expand_edit_card": false,
+    "use_modifier_to_send": true,
     "default_width": 320.0,
     "flexible": true,
     "default_model": {
