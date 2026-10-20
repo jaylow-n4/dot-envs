@@ -112,5 +112,16 @@
     "unbind": {
       "cmd-shift-w": "workspace::CloseWindow"
     }
+  },
+  {
+    "bindings": {
+      "cmd-space": "editor::ShowCompletions"
+    }
+  },
+  {
+    "context": "vim_mode == insert",
+    "unbind": {
+      "ctrl-x ctrl-o": "editor::ShowCompletions"
+    }
   }
 ]
