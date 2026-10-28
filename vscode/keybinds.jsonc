@@ -51,11 +51,11 @@
 		"when": "editorFocus"
 	},
 	{
-		"key": "ctrl+cmd+n",
+		"key": "ctrl+shift+n",
 		"command": "explorer.newFile"
 	},
 	{
-		"key": "ctrl+cmd+d",
+		"key": "ctrl+shift+d",
 		"command": "explorer.newFolder"
 	},
 	{
@@ -257,5 +257,20 @@
 		"key": "shift+cmd+i",
 		"command": "workbench.action.chat.openagent",
 		"when": "config.chat.agent.enabled && !chatSetupDisabled && chatSetupHidden"
+	},
+	{
+		"key": "shift+cmd+i",
+		"command": "claude-vscode.focus",
+		"when": "!config.claudeCode.useTerminal && editorTextFocus"
+	},
+	{
+		"key": "shift+cmd+i",
+		"command": "claude-vscode.blur",
+		"when": "!config.claudeCode.useTerminal && !editorTextFocus"
+	},
+	{
+		"key": "ctrl+alt+f",
+		"command": "-claude-vscode.toggleFocusView",
+		"when": "claude-vscode.sideBarActive || activeWebviewPanelId == 'claudeVSCodePanel'"
 	}
 ]
