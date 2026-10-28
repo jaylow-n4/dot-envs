@@ -23,12 +23,6 @@
   "chat.editing.confirmEditRequestRemoval": false,
   "chat.editing.confirmEditRequestRetry": false,
   "chat.mcp.gallery.enabled": true,
-  "chat.tools.terminal.autoApprove": {
-    "/^mv /mnt/g/Documents/暇つぶし/mcp-server-test/resources/world-settings/characters/the-black-monopoly/mira-andren\\.md /mnt/g/Documents/暇つぶし/mcp-server-test/resources/world-settings/characters/witch-agency/primal-witch/$/": {
-      "approve": true,
-      "matchCommandLine": true,
-    },
-  },
   "chat.useNestedAgentsMdFiles": true,
   "clock.dateFormat": "yyyy/mm/dd HH:MM",
   "debug.terminal.clearBeforeReusing": true,
@@ -86,8 +80,6 @@
     "typescriptreact": false,
     "python": true
   },
-  "github.copilot.nextEditSuggestions.enabled": true,
-  "github.copilot.selectedCompletionModel": "DeepSeek-R1-0528-Qwen3",
   "gitlens.ai.model": "vscode",
   "gitlens.ai.vscode.model": "copilot:gpt-4.1",
   "indentRainbow.indicatorStyle": "light",
